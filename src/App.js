@@ -1,11 +1,12 @@
 import './App.css';
 import { useEffect } from 'react';
 import { useTelegram } from './hooks/useTelegram';
-const {user, onclose} = useTelegram()
+
 
 
 function App() {
   const {onToogleButton, tg} = useTelegram()
+  
 
    useEffect(  () => {
       tg.ready();
@@ -14,8 +15,8 @@ function App() {
    
   return (
     <div className="App">
+      <Header />
     <button onClick={onToogleButton}>Toogle</button>
-    <button onClick={onClose}>Yopish</button>
     </div>
   );
 }
