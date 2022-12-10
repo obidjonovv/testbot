@@ -16,7 +16,7 @@ function App() {
    
   return (
     <div className="App">
-    work
+    Day
     <button onClick={onClose}>Yopish</button>
     </div>
   );
